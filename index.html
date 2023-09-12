@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script defer src="script.js"></script>
+   <title>Tip Calculator</title>
+</head>
+<body>
+    <div id="toasts-container" ></div>
+    <article class="tip center">
+        <div class="left">
+            <div class="total-bill">
+                <p for="bill" class="label">Bill</p>
+                <div class="input-field">
+                    <img src="images/icon-dollar.svg" alt="dollar icon" class="dollar-icon">
+                    <input type="text" class="input input-bill" name="bill" inputmode="number" pattern="[0-9]+">
+                </div>
+            </div>
+            <div class="tip-percent-container">
+                <p class="label">Select Tip %</p>
+                <div class="tip-percent">
+                    <div class="tip-percent__num" data-percent="5">5%</div>
+                    <div class="tip-percent__num" data-percent="10">10%</div>
+                    <div class="tip-percent__num" data-percent="15">15%</div>
+                    <div class="tip-percent__num" data-percent="25">25%</div>
+                    <div class="tip-percent__num" data-percent="50">50%</div>
+                    <div class="tip-percent__num custom" data-percent="custom">Custom</div>
+                </div>
+            </div>
+            <div class="numOfPpl">
+                <p for="ppl-num" class="label">Number of People</p>
+                <div class="input-field">
+                  <img src="images/icon-dollar.svg" alt="dollar icon" class="dollar-icon">
+                  <input type="text" class="input input-numOfPpl" name="ppl-num" inputmode="number" pattern="[0-9]+" >
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="info-container">
+                <div class="tip-amount__container">
+                    <div class="tip-amount">
+                        <p class="tip-amount__info">Tip Amount<span class="person">/ person</span> </p>
+                        <div class="tip-amount__price">$0.00</div>
+                    </div>
+                    <div class="tip-amount">
+                        <p class="tip-amount__info">Total<span class="person">/ person</span> </p>
+                        <div class="tip-amount__totalPrice">$0.00</div>
+                    </div>
+                </div>
+                <button class="btn-reset">RESET</button>
+            </div>
+        </div>
+    </article>
+
+</body>
+</html>
