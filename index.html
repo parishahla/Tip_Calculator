@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,13 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
+   <script src="https://cdn.tailwindcss.com"></script>
    <script defer src="script.js"></script>
    <title>Tip Calculator</title>
 </head>
 <body>
     <div id="toasts-container" ></div>
-    <article class="tip center">
+    <article class="tip center flex flex-col md:flex-row rounded-3xl p-8 shadow-2xl max-w-fit ">
         <div class="left">
             <div class="total-bill">
                 <p for="bill" class="label">Bill</p>

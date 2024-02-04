@@ -15,7 +15,6 @@ const LBL_PRICE_PER_PERSON = document.querySelector('.tip-amount__price');
 const LBL_TOTAL_PRICE = document.querySelector('.tip-amount__totalPrice');
 const BTN_RESET = document.querySelector('.btn-reset');
 
-//*
 
 //* tasks to do 
 //* D 1- Control inputs for characters* and zero
@@ -28,14 +27,15 @@ const BTN_RESET = document.querySelector('.btn-reset');
 //* D 7- custom percent input / btn switch + use it in the formula*
 
 //* D 8- invalid html text + invalid situation handler + cant be zero wont reset + it shrinks my input *
-//8 D 9- toast notif for that invalid // Guard clause
+//*8 D 9- toast notif for that invalid // Guard clause
 //* D 10- custom input grows taller horizentally
 
-//! 11- incase user forgets to set any of the inputs especially percents
+//!* 11- incase user forgets to set any of the inputs especially percents
 //! 12- RESPONSIVE DEGIL KI !
 //* D 13- custom invalid won't reset + shows nan when it's zero and continues the operation
 //* D 14- use math.round and toFixed to avoid getting crazy numbers for numbers bellow 1*
 //! 15- put the custom input in a function bc u have to call it multiple times to get rid of it
+
 function App() {
     let USER_PERCENT_OF_CHOICE;
     let TIP_PER_PERSON;
@@ -65,6 +65,7 @@ function App() {
     // percent selection 
 
     TIP_PERCENT_CONTAINER.addEventListener('click', userChoice);
+
     function userChoice(e) {
         e.preventDefault();
 
@@ -108,7 +109,7 @@ function App() {
         INPUT_FIELD = INPUT_NUM_OF_PPL.closest('.input-field')
         INPUT_FIELD.classList.remove('invalid');
         
-        NEW_CUSTOM_PERCENT.classList.remove('invalid-custom');
+        // NEW_CUSTOM_PERCENT.classList.remove('invalid-custom');
        
         let BILL = +INPUT_BILL.value;
         let NUM_OF_PPL = +INPUT_NUM_OF_PPL.value;

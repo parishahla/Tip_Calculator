@@ -1,0 +1,19 @@
+//* tasks to do 
+//* D 1- Control inputs for characters* and zero
+//* D 2- Use event delegation to set the chosen percent for the tip calcuting formula*
+//* D 3- Use event delegation to change the custom btn to an input on click*
+//* D 4- Calculate the total price*
+//* D 5- Display the calculated price on the right side on blur (the last input, form submit event)*
+
+//* D 6- NaN error on UI when clicks and blurs with no inputs*
+//* D 7- custom percent input / btn switch + use it in the formula*
+
+//* D 8- invalid html text + invalid situation handler + cant be zero wont reset + it shrinks my input *
+//8 D 9- toast notif for that invalid // Guard clause
+//* D 10- custom input grows taller horizentally
+
+//! 11- incase user forgets to set any of the inputs especially percents
+//! 12- RESPONSIVE DEGIL KI !
+//* D 13- custom invalid won't reset + shows nan when it's zero and continues the operation
+//* D 14- use math.round and toFixed to avoid getting crazy numbers for numbers bellow 1*
+//! 15- put the custom input in a function bc u have to call it multiple times to get rid of it

@@ -3,7 +3,6 @@
     --clr-Strong-cyan: hsl(172, 67%, 45%);
 
 /* Neutral */
-
     --clr-Very-dark-cyan: hsl(183, 100%, 15%);
     --clr-Dark-grayish-cyan: hsl(186, 14%, 43%);
     --clr-Grayish-cyan: hsl(184, 14%, 56%);
@@ -33,15 +32,15 @@ html {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh;
+   /* height: 100vh; */
    font-family: var(--f-family);
 }
 
-.center {
+/* .center {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .label {
     color: var(--clr-Dark-grayish-cyan);
@@ -53,11 +52,11 @@ html {
 
 .tip {
     background-color: var(--clr-White);
-    height: 24rem;
-    width: 45rem;
-    padding: 2rem;
-    border-radius: 2rem;
-    box-shadow: 0 1rem 2rem rgba(0, 0 , 0, 0.2);
+    /* height: 24rem; */
+    /* width: 45rem; */
+    /* padding: 2rem; */
+    /* border-radius: 2rem; */
+    /* box-shadow: 0 1rem 2rem rgba(0, 0 , 0, 0.2); */
 }
 
 .left {
